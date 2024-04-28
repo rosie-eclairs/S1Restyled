@@ -1,5 +1,4 @@
 {
-	"dataSel_character_sonic":  { "File": "dataSel_character_sonic.bmp", "Rect": "0,0,32,40", "Center": "14,32" },
 	"dataSel_lifeContinue_sonic":  { "File": "dataSel_lifeContinue.bmp", "Rect": "2,4,24,40", "Center": "16,-8" },
 	"dataSel_savePortrait_sonic":  { "File": "dataSel_savePortrait_sonic.bmp", "Rect": "0,0,80,56", "Center": "40,120" },
 	"dataSel_savePortrait_sonicSuper":  { "File": "dataSel_savePortrait_sonicSuper.bmp", "Rect": "0,0,80,56", "Center": "40,120" },

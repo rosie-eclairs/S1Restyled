@@ -1,0 +1,4 @@
+{
+	"menu_characters_sonic":  { "File": "dataSel_character_sonic.png", "Rect": "0,0,32,40", "Center": "18,20" },
+	"charselect_sonic":  { "File": "dataSel_character_sonic.bmp", "Rect": "0,0,32,40", "Center": "18,20" }
+}
