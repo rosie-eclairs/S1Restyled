@@ -1,0 +1,48 @@
+{
+	
+	"S1_balance1":
+	{
+		"File": "balance.bin",
+		"RomInject": "0x12bc2"
+	},
+	
+	"S1_balance2":
+	{
+		"File": "balance.bin",
+		"RomInject": "0x12b8d"
+	},
+	
+	// cd stuff
+	"SCD_walk":
+	{
+		"File": "cd/walk.bin",
+		// "RomInject": "0x12aee"
+	},
+	
+	"SCD_walk_super":
+	{
+		"File": "cd/walk.bin",
+		// "RomInject": "0x12c7a"
+	},
+	
+	"SCD_roll":
+	{
+		"File": "cd/roll.bin",
+		// "RomInject": "0x12b03"
+	},
+
+	"SCD_idle":
+	{
+		"File": "cd/idle.bin",
+		// "RomInject": "0x12b20"
+	},
+	
+	"SCD_fan":
+	{
+		"File": "cd/fan.bin",
+		// "RomInject": "0x12bd1"
+	},
+}
+
+
+

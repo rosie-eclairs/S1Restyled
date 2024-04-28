@@ -1,0 +1,20 @@
+// This function is here only for script mods that want to change or extend the character sprites
+function u64 Standalone.getModdedAnimationSpriteKey(u8 character, u16 animationSprite)
+{
+	// Custom Animations
+	// I don't even need to base this but it's better for compatability reasons
+	//u8 animationSprite = char.animation.sprite
+	u16 animationSpriteEx = Standalone.getModdedAnimationSpriteEx(character, animationSprite)
+	u64 returnkey = 0
+	
+	if (char.state == 0x31) // the animation
+	{
+		u64 spr = "sonic_springtwirl_%x"
+		returnkey = stringformat(spr, char.animation.frame % LST_getFrameCount(spr))
+	}
+
+	if Renderer.hasCustomSprite(returnkey)
+		return returnkey
+	// Default implementation: No key set
+	return base.Standalone.getModdedAnimationSpriteKey(character, animationSpriteEx)
+}
