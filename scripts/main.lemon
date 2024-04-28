@@ -3,6 +3,19 @@ global u8 restyled.Anim
 global u8 restyled.Mira
 
 
+function bool Standalone.onWriteToSpriteTable(s16 px, s16 py, u16 renderQueue)
+{
+	if (u8[A0 + 0x38] == 0xff && objA0.animation.sprite == 5 && objA0.animation.timer != 0 && u16[0xffffb04a + 0x30] == 0)
+	{
+		if (u8[A0 + 0x23] == 0x19)
+		{
+			return true
+		}
+	}
+
+	return base.Standalone.onWriteToSpriteTable(px, py, renderQueue)
+}
+
 //# address-hook(0x010a94) end(0x010ae8)
 function void Character.BaseUpdate.Sonic()
 {
