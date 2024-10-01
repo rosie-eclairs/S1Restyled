@@ -1,11 +1,11 @@
 {
 	"character_sonic_cd_0x05":  { "File": "character_sonic_cd.bmp", "Rect": "9,6,40,40", "Center": "19,21" },
 	"character_sonic_cd_0x06":  { "File": "character_sonic_cd.bmp", "Rect": "64,6,40,41", "Center": "20,21" },
-	"character_sonic_cd_0x07":  { "File": "character_sonic_cd.bmp", "Rect": "124,7,33,41", "Center": "20,20" },
+	"character_sonic_cd_0x07":  { "File": "character_sonic_cd.bmp", "Rect": "70,7,33,41", "Center": "14,20" },
 	"character_sonic_cd_0x08":  { "File": "character_sonic_cd.bmp", "Rect": "180,8,32,40", "Center": "18,22" },
 	"character_sonic_cd_0x01":  { "File": "character_sonic_cd.bmp", "Rect": "232,6,40,40", "Center": "19,21" },
 	"character_sonic_cd_0x02":  { "File": "character_sonic_cd.bmp", "Rect": "288,6,40,40", "Center": "20,21" },
-	"character_sonic_cd_0x03":  { "File": "character_sonic_cd.bmp", "Rect": "348,7,32,40", "Center": "19,20" },
+	"character_sonic_cd_0x03":  { "File": "character_sonic_cd.bmp", "Rect": "288,8,32,40", "Center": "20,19" },
 	"character_sonic_cd_0x04":  { "File": "character_sonic_cd.bmp", "Rect": "404,8,35,40", "Center": "21,22" },
 	"character_sonic_cd_0x0d":  { "File": "character_sonic_cd.bmp", "Rect": "456,4,40,48", "Center": "21,21" },
 	"character_sonic_cd_0x0e":  { "File": "character_sonic_cd.bmp", "Rect": "508,4,48,44", "Center": "21,20" },

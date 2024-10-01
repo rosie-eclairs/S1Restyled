@@ -1,6 +1,6 @@
 {
 	"character_supersonic_0x07":  { "File": "character_supersonic.bmp", "Rect": "7,0,41,47", "Center": "21,29" },
-	"character_supersonic_0x08":  { "File": "character_supersonic.bmp", "Rect": "64,889,40,48", "Center": "20,28" },
+	"character_supersonic_0x08":  { "File": "character_supersonic.bmp", "Rect": "67,1,40,48", "Center": "17,28" },
 	"character_supersonic_0x01":  { "File": "character_supersonic.bmp", "Rect": "125,0,33,48", "Center": "20,25" },
 	"character_supersonic_0x02":  { "File": "character_supersonic.bmp", "Rect": "181,0,32,48", "Center": "18,27" },
 	"character_supersonic_0x03":  { "File": "character_supersonic.bmp", "Rect": "232,0,40,47", "Center": "20,29" },

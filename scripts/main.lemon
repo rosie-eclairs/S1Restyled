@@ -2,7 +2,6 @@ global u8 restyled.Palette
 global u8 restyled.Anim
 global u8 restyled.Mira
 
-
 //# address-hook(0x010a94) end(0x010ae8)
 function void Character.BaseUpdate.Sonic()
 {
@@ -302,7 +301,23 @@ function bool Standalone.drawCharacterSprite(u8 character, u8 variant, s16 px, s
 	if (asSmallGhost)
 		Renderer.drawCustomSprite(key, px, py, atex, flags | SPRITE_FLAG_PRIO, 0xa800, angle, 0xc0ffffff, 0x8000)
 	else
+	{
+		if (char.state == char.state.GOT_HURT_PANIC)
+		{
+			angle = char.rotation
+			
+			if (char.flags & char.flag.IN_AIR)
+			{
+				char.hitbox_extends.x = char.hitbox.x.ROLLING
+				char.hitbox_extends.y = char.hitbox.y.ROLLING
+				char.flags |= char.flag.ROLLING
+				char.state = char.state.ROLLING
+			}
+			
+			py -= 8
+		}
 		Renderer.drawCustomSprite(key, px, py, atex, flags, renderQueue, angle, 255)
+	}
 
 	bool useAfterImages
 	if (isPlayer1)
@@ -334,6 +349,10 @@ function bool Standalone.drawCharacterSprite(u8 character, u8 variant, s16 px, s
 			A1 = 0xffffe500 + u8(posbackup.offset.player1 - (i * 8 + 4))
 			s16 px0 = u16[A1] - camera.foreground.x.u16 + (i * afterImagesOffsetX / 4)
 			s16 py0 = u16[A1+2] - camera.foreground.y.u16
+			
+			if (char.state == char.state.GOT_HURT_PANIC)
+				py0 -= 8
+			
 			Renderer.drawCustomSprite(key, px0, py0, atex, flags, renderQueue - i, angle, 192 - i * 32)
 		}
 	}
