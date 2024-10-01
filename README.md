@@ -1,7 +1,6 @@
 # Rosie's Restyled S1 Sonic v.8
 by rosie_eclairs
 S1 Sonic but with my own tweaks ^c ^
-Miracle Sonic concept by Pixy-Pie~
 Additional Raw Data modding by mrgrassman14
 Toggles by laveslIme & HazelSpooder
 

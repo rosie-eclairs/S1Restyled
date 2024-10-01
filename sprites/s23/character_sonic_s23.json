@@ -141,7 +141,7 @@
 	"character_sonic_23_0x8c":  { "File": "character_sonic_23.bmp", "Rect": "624,460,40,32", "Center": "20,16" },
 	"character_sonic_23_0x8d":  { "File": "character_sonic_23.bmp", "Rect": "680,460,40,32", "Center": "20,16" },
 	"character_sonic_23_0x8e":  { "File": "character_sonic_23.bmp", "Rect": "744,452,24,48", "Center": "15,24" },
-	"character_sonic_23_0x8f":  { "File": "character_sonic_23.bmp", "Rect": "792,459,40,34", "Center": "22,15" },
+	"character_sonic_23_0x8f":  { "File": "character_sonic_23.bmp", "Rect": "792,459,40,34", "Center": "22,20" },
 	"character_sonic_23_0x90":  { "File": "character_sonic_23.bmp", "Rect": "852,452,38,49", "Center": "19,24" },
 	"character_sonic_23_0x91":  { "File": "character_sonic_23.bmp", "Rect": "8,508,40,48", "Center": "18,25" },
 	"character_sonic_23_0x92":  { "File": "character_sonic_23.bmp", "Rect": "64,511,40,40", "Center": "18,24" },
@@ -178,8 +178,8 @@
 	"character_sonic_23_0xb1":  { "File": "character_sonic_23.bmp", "Rect": "915,569,31,39", "Center": "17,19" },
 	"character_sonic_23_0xb2":  { "File": "character_sonic_23.bmp", "Rect": "915,569,31,39", "Center": "17,19" },
 	"character_sonic_23_0xb3":  { "File": "character_sonic_23.bmp", "Rect": "915,569,31,39", "Center": "17,19" },
-	"character_sonic_23_0xb4":  { "File": "character_sonic_23.bmp", "Rect": "184,616,26,56", "Center": "11,26" },
-	"character_sonic_23_0xb5":  { "File": "character_sonic_23.bmp", "Rect": "240,616,26,56", "Center": "11,26" },
+	"character_sonic_23_0xb4":  { "File": "character_sonic_23.bmp", "Rect": "184,616,26,56", "Center": "11,24" },
+	"character_sonic_23_0xb5":  { "File": "character_sonic_23.bmp", "Rect": "240,616,26,56", "Center": "11,24" },
 	"character_sonic_23_0xb6":  { "File": "character_sonic_23.bmp", "Rect": "292,624,32,40", "Center": "19,20" },
 	"character_sonic_23_0xb7":  { "File": "character_sonic_23.bmp", "Rect": "352,624,24,40", "Center": "11,20" },
 	"character_sonic_23_0xb8":  { "File": "character_sonic_23.bmp", "Rect": "404,624,32,40", "Center": "19,20" },
@@ -251,8 +251,8 @@
 	"character_sonic_23_0xfa":  { "File": "character_sonic_23.bmp", "Rect": "516,847,32,41", "Center": "13,21" },
 	"sonic_dropdash_0":  { "File": "character_sonic_23.bmp", "Rect": "568,847,32,32", "Center": "16,16" },
 	"sonic_dropdash_1":  { "File": "character_sonic_23.bmp", "Rect": "610,847,32,32", "Center": "16,16" },
-	"sonic_peelout_23_0":  { "File": "character_sonic_23.bmp", "Rect": "846,843,40,40", "Center": "20,18" },
-	"sonic_peelout_23_1":  { "File": "character_sonic_23.bmp", "Rect": "896,843,40,40", "Center": "20,18" },
-	"sonic_peelout_23_2":  { "File": "character_sonic_23.bmp", "Rect": "946,843,40,40", "Center": "20,18" },
-	"sonic_peelout_23_3":  { "File": "character_sonic_23.bmp", "Rect": "996,843,40,40", "Center": "20,18" }
+	"sonic_peelout_23_0":  { "File": "character_sonic_23.bmp", "Rect": "846,843,40,40", "Center": "22,18" },
+	"sonic_peelout_23_1":  { "File": "character_sonic_23.bmp", "Rect": "888,843,40,40", "Center": "21,18" },
+	"sonic_peelout_23_2":  { "File": "character_sonic_23.bmp", "Rect": "943,843,40,40", "Center": "20,18" },
+	"sonic_peelout_23_3":  { "File": "character_sonic_23.bmp", "Rect": "995,843,40,40", "Center": "20,18" }
 }

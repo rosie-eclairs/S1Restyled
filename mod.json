@@ -7,19 +7,8 @@
 		"Description": "S1 Sonic but with my own tweaks :D 
 		Additional Raw Data modding by mrgrassman14
 		Toggles by laveslIme & HazelSpooder",
-		"ModVersion": "8.0",
+		"ModVersion": "8.3",
 	},
-	
-	"OtherMods":
-	{
-		"DLTWRLANI":
-		{
-			"DisplayName": "Spring Twirl",
-			"IsRequired": "0",
-			"Priority": "Higher",
-		},	
-	
-	},	
 	
 	
 	"Settings":
@@ -35,7 +24,7 @@
 				{
 					"0x00": "Sonic 1",
 					"0x01": "S1 Yamaguchi",
-					"0x02": "S1 Restyled",
+					"0x02": "S1 Expanded",
 					"0x03": "Sonic CD",
 					"0x04": "Sonic 2",
 					"0x05": "Sonic 3",
@@ -51,10 +40,11 @@
 					"0x0f": "Toof!",
 					"0x10": "ME palette, YOU palette!",
 					"0x11": "Tidmouth",
-					"0x12": "BLUE_RASPBERRY",
-					"0x13": "Lemon Zest",
+					"0x12": "Eclipse",
+					"0x13": "Cartoony",
 					"0x14": "Animated",
 					"0x15": "CUSTOM",
+					"0x16": "Spooky!",					
 					}
 			}
 		],

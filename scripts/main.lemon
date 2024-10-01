@@ -2,6 +2,7 @@ global u8 restyled.Palette
 global u8 restyled.Anim
 global u8 restyled.Mira
 
+
 //# address-hook(0x010a94) end(0x010ae8)
 function void Character.BaseUpdate.Sonic()
 {
@@ -88,6 +89,8 @@ function string getCharacterPaletteKey(u8 character)
 			return "14"
 		if (restyled.Palette == 0x15)
 			return "15"		
+		if (restyled.Palette == 0x16)
+			return "spooky"					
 		else //Failsafe
 			return "00"
 	}

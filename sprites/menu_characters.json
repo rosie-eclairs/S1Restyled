@@ -1,6 +1,0 @@
-{
-	"menu_characters_sonic":  { "File": "menu_characters_sonic.png", "Rect": "0,0,32,40", "Center": "18,20" },
-	"charselect_sonic":  { "File": "charselect_sonic.bmp", "Rect": "0,0,32,40", "Center": "18,20" },
-	"ESS_Zone_Sonic_0":  { "File": "dataSel_savePortrait_sonic.bmp", "Rect": "0,0,80,56", "Center": "40,28" },
-	"ESS_Zone_Sonic_1":  { "File": "dataSel_savePortrait_sonicSuper.bmp", "Rect": "0,0,80,56", "Center": "40,28" }
-}
