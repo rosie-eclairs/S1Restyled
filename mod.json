@@ -1,13 +1,13 @@
 {
 	"Metadata":
 	{
-		"Name": "S1Restyled",
+		"Name": "S1 Restyled",
 		"UniqueID": "ReC_S1",	
 		"Author": "rosie_eclairs",
 		"Description": "S1 Sonic but with my own tweaks :3 
 		Additional Raw Data modding by mrgrassman14
 		Toggles by laveslIme & HazelSpooder",
-		"ModVersion": "8.3.1",
+		"ModVersion": "8.5",
 	},
 	
 	
@@ -44,7 +44,8 @@
 					"0x13": "Cartoony",
 					"0x14": "Animated",
 					"0x15": "CUSTOM",
-					"0x16": "Spooky!",					
+					"0x16": "Spooky!",		
+					"0x17": "Festive"					
 					}
 			}
 		],

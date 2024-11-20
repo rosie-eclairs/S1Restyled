@@ -89,7 +89,9 @@ function string getCharacterPaletteKey(u8 character)
 		if (restyled.Palette == 0x15)
 			return "15"		
 		if (restyled.Palette == 0x16)
-			return "spooky"					
+			return "spooky"			
+		if (restyled.Palette == 0x17)
+			return "happy"					
 		else //Failsafe
 			return "00"
 	}
