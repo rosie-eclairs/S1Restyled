@@ -1,0 +1,13 @@
+{
+	"hud_bonus_icon_blue":   { "File": "hts.bmp", "Rect": "0,61,16,19", "Center": "8,-1" },
+	"continue_icon_sonic":    { "File": "hts.bmp", "Rect": "0,82,20,24", "Center": "12,24" },
+	"hud_lives_icon_sonic":  { "File": "hud_life_sprites.bmp", "Rect": "0,16,48,16", "Center": "0,0" },
+	"S3Complete_LevelSelectIcon_Sonic3": { "File": "s3c.bmp", "Rect": "0,16,48,16", "Center": "0,0" },
+	"S3Complete_LevelSelectIcon_Sonic2": { "File": "s3c.bmp", "Rect": "0,16,48,16", "Center": "0,0" },
+	"S3Complete_LevelSelectIcon_Sonic1": { "File": "s3c.bmp", "Rect": "0,16,48,16", "Center": "0,0" },
+	"S3Complete_LevelSelectIcon_Sonic1Acc": { "File": "s3c.bmp", "Rect": "0,16,48,16", "Center": "0,0" },
+	"S3Complete_LevelSelectIcon_Sonic2Acc": { "File": "s3c.bmp", "Rect": "0,16,48,16", "Center": "0,0" },
+	"S3Complete_LevelSelectIcon_Sonic2Mobile": { "File": "s3c.bmp", "Rect": "0,16,48,16", "Center": "0,0" },
+	"S3Complete_LevelSelectIcon_SonicCD": { "File": "s3c.bmp", "Rect": "0,16,48,16", "Center": "0,0" },
+	"dataselect_icons_sonic":  { "File": "icons.bmp", "Rect": "0,0,24,40", "Center": "0,0" },
+}

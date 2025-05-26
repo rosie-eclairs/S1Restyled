@@ -1,0 +1,5 @@
+{
+	"character_supersonic_fight_0x00":  { "File": "character_supersonic_fight.bmp", "Rect": "8,8,64,64", "Center": "30,32" },
+	"character_supersonic_fight_0x01":  { "File": "character_supersonic_fight.bmp", "Rect": "88,8,64,64", "Center": "30,32" },
+	"character_supersonic_fight_0x02":  { "File": "character_supersonic_fight.bmp", "Rect": "168,8,64,64", "Center": "32,32" }
+}

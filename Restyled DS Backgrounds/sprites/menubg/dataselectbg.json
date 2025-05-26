@@ -1,0 +1,7 @@
+{
+
+	"bg_dataselect2":  { "File": "dataselect_bg.png", "Rect": "0,0,0,0", "Center": "0,0" },
+	"bg_dataselect_dark":  { "File": "dataselect_dark_bg.png", "Rect": "0,0,0,0", "Center": "0,0" },	
+	"bg_levelselect":  { "File": "levelselect_bg.png", "Rect": "0,0,0,0", "Center": "0,0" },		
+	"bg_dataselect": { "File": "dataselect_bag.png" }
+}

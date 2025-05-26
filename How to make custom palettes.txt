@@ -1,3 +1,0 @@
-If you want to make a custom palette, you can! 
-All you need to do is go to the "palettes" folder and edit "15.png". 
-Next, open the game and select "CUSTOM" in "Pick a flavour!" in the mod options menu.

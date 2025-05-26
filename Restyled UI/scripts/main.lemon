@@ -1,0 +1,425 @@
+global s16 darkPosition
+global s16 lavenderPosition
+global u8 moveState
+global bool disableElements
+global s16 lavenderYoffset
+global u16 super_rgboffset
+
+
+
+
+// title card
+function bool Standalone.onWriteToSpriteTable(s16 px, s16 py, u16 renderQueue)
+{
+	if (objA0.update_address == 0x02d8e2)
+	{
+		u64 key = stringformat("titlecard_blue_0x%02x", objA0.value3a)
+		u8 flags = ((objA0.render_flags & 0x01) ? SPRITE_FLAG_FLIP_X : 0) | ((objA0.sprite_attributes & 0x8000) ? SPRITE_FLAG_PRIO : 0)
+
+		Renderer.drawCustomSprite(key, px - 0x18, py, 0, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffd, 0, 0xffffffff, 0x10000)
+
+		A1 = 0xffffb000
+		if (objA1.base_state != 0x00 && moveState == 0x01)
+		{
+			disableElements = 1
+		}
+		
+		if (!disableElements)
+		{
+			Renderer.drawCustomSprite("titlecard_dark", darkPosition, 0x00, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffc)
+			Renderer.drawCustomSprite("titlecard_lavender", lavenderPosition, lavenderYoffset, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffa - 0x0001)
+			lavenderYoffset -= 1
+			if (lavenderYoffset <= -19)
+				lavenderYoffset = 0
+		}
+		return true
+	}
+	
+	if (objA0.update_address == 0x02d95c)
+	{
+		if (objA0.animation.sprite == 2)
+		{
+			// act number text
+			u64 key
+			
+			if (global.zone_act.apparent == 0x0a01 || global.zone_act.apparent == 0x0c00 || global.zone_act.apparent == 0x1600 || global.zone_act.apparent == 0x1700)
+				key = "titlecard_actboss"
+			else if (global.act.apparent == 0)
+				key = "titlecard_act1"
+			else
+				key = "titlecard_act2"
+			
+			Renderer.drawCustomSprite(key, px, py, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffe)
+			return true
+		}
+		
+		if (objA0.animation.sprite == 3)
+		{
+			// zone text
+			u64 key = "titlecard_zone"
+			
+			Renderer.drawCustomSprite(key, px, py, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffe)
+			return true
+		}
+		
+		if (objA0.animation.sprite == 4)
+		{
+			// aiz
+			u64 key = "titlecard_aiz"
+			
+			Renderer.drawCustomSprite(key, px, py, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffe)
+			return true
+		}
+		
+		if (objA0.animation.sprite == 5)
+		{
+			// hcz
+			u64 key = "titlecard_hcz"
+			
+			Renderer.drawCustomSprite(key, px, py, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffe)
+			return true
+		}
+		
+		if (objA0.animation.sprite == 6)
+		{
+			// mgz
+			u64 key = "titlecard_mgz"
+			
+			Renderer.drawCustomSprite(key, px, py, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffe)
+			return true
+		}
+		
+		if (objA0.animation.sprite == 7)
+		{
+			// cnz
+			u64 key = "titlecard_cnz"
+			
+			Renderer.drawCustomSprite(key, px, py, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffe)
+			return true
+		}
+		
+		if (objA0.animation.sprite == 8)
+		{
+			// fbz
+			u64 key = "titlecard_fbz"
+			
+			Renderer.drawCustomSprite(key, px, py, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffe)
+			return true
+		}
+		
+		if (objA0.animation.sprite == 9)
+		{
+			// icz
+			u64 key = "titlecard_icz"
+			
+			Renderer.drawCustomSprite(key, px, py, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffe)
+			return true
+		}
+		
+		if (objA0.animation.sprite == 10)
+		{
+			// lbz
+			u64 key = "titlecard_lbz"
+			
+			Renderer.drawCustomSprite(key, px, py, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffe)
+			return true
+		}
+		
+		if (objA0.animation.sprite == 11)
+		{
+			// mhz
+			u64 key = "titlecard_mvz"
+			
+			Renderer.drawCustomSprite(key, px, py, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffe)
+			return true
+		}
+		
+		if (objA0.animation.sprite == 12)
+		{
+			// soz
+			u64 key = "titlecard_soz"
+			
+			Renderer.drawCustomSprite(key, px, py, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffe)
+			return true
+		}
+		
+		if (objA0.animation.sprite == 13)
+		{
+			// lrz
+			u64 key = "titlecard_lrz"
+			
+			Renderer.drawCustomSprite(key, px, py, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffe)
+			return true
+		}
+		
+		if (objA0.animation.sprite == 17)
+		{
+			// hpz
+			u64 key = "titlecard_hpz"
+			
+			Renderer.drawCustomSprite(key, px, py, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffe)
+			return true
+		}
+		
+		if (objA0.animation.sprite == 14)
+		{
+			// ssz
+			u64 key = "titlecard_ssz"
+			
+			Renderer.drawCustomSprite(key, px, py, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffe)
+			return true
+		}
+		
+		if (objA0.animation.sprite == 15)
+		{
+			// dez
+			u64 key = "titlecard_dez"
+			
+			Renderer.drawCustomSprite(key, px, py, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffe)
+			return true
+		}
+		
+		if (objA0.animation.sprite == 16)
+		{
+			// tdz
+			u64 key = "titlecard_tdz"
+			
+			Renderer.drawCustomSprite(key, px, py, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffe)
+			return true
+		}
+		
+		if (objA0.animation.sprite == 19 || objA0.animation.sprite == 20)
+		{
+			// bonus/doilus stage
+		
+			if (objA0.animation.sprite == 20)
+				return true
+				
+			u64 key
+			if (global.zone == 0x13)
+				key = "titlecard_doilus"
+			else
+				key = "titlecard_bonus"
+			
+			Renderer.drawCustomSprite(key, px, py, 0x00, SPRITE_FLAG_PRIO | SPRITE_FLAG_NO_GLOBAL_TINT, 0xfffe)
+			return true
+		}
+		
+	}
+        
+    return base.Standalone.onWriteToSpriteTable(px, py, renderQueue)
+	
+}
+
+
+//# address-hook(0x02d690) end(0x02d69a)
+function void TitleCard.Update()
+{
+	base.TitleCard.Update()
+	
+	if (moveState == 1)
+	{
+		darkPosition += 0x20
+		
+		if (darkPosition > 0x180)
+		{
+			moveState = 2
+		}
+	}
+	else if (moveState == 2)
+	{
+		lavenderPosition -= 0x04
+		
+		if (lavenderPosition <= 0x20)
+		{
+			moveState = 3
+			objA0.animation.timer = 0x20
+		}
+	}
+	else if (moveState == 3)
+	{
+		--objA0.animation.timer
+		
+		if (objA0.animation.timer <= 0)
+		{
+			moveState = 4
+			objA0.animation.timer = 0x10
+		}
+	}
+	else if (moveState == 4)
+	{
+		lavenderPosition -= 0x20
+		
+		--objA0.animation.timer
+		if (objA0.animation.timer <= 0)
+		{
+			moveState = 5
+		}
+	}
+	
+}
+
+//# address-hook(0x02d6a6) end(0x02d768)
+function void TitleCard.Init()
+{
+	base.TitleCard.Init()
+	// moveState = 0 --> waiting for original title card elements to slide in
+	// moveState = 1 --> black title card element sliding out
+	// moveState = 2 --> lavender title card element sliding out for the first timer
+	// moveState = 3 --> lavender title card element stops briefly and Sonic animates on banner
+	// moveState = 4 --> lavender banner goes away
+	// moveState = 5 --> other title card elements go away
+	
+	darkPosition = 0
+	lavenderPosition = 0x40
+	moveState = 0
+	disableElements = 0
+	lavenderYoffset = 0
+	super_rgboffset = 0
+}
+
+//# address-hook(0x02d76a) end(0x02d802)
+function void TitleCard.Wait()
+{
+	base.TitleCard.Wait()
+	
+	if (kosinski.waiting_modules)
+		return
+
+	if (allocDynamicObjectAfterA0())
+		moveState = 1
+}
+
+//# address-hook(0x02d8e2) end(0x02d926)
+function void TitleCard.RedBarElement.Update()
+{
+	base.TitleCard.RedBarElement.Update()
+	
+	if (objA0.value3e == 0)
+	{
+		objA0.position.x.u16 -= 0x10
+		objA0.value3e = 1
+	}
+	
+	if (moveState == 3)
+	{
+		if (objA0.value3b < 4)
+		{
+			++objA0.value3b
+		}
+		else
+		{
+			if (objA0.value3a < 4)
+			{
+				++objA0.value3a
+			}
+			
+			objA0.value3b = 0
+		}
+	}
+}
+
+
+	//RGB HUD
+
+function void HUD.drawSprite(u64 key, u16 px, u16 py, u16 renderQueue)
+{
+	u32 tintColor
+	if (super.active || super.active.tails)
+	{
+		if (level.framecounter & 0x01)
+			super_rgboffset += 1
+		
+		if (super_rgboffset >= 360)
+			super_rgboffset = 0
+			
+		u32 color = ShenkSam_getHSVColor(super_rgboffset, 30, 100) // thank you very much lemons
+	
+		tintColor = 0x000000ff + (color << 8)
+	}
+	else
+	{
+		tintColor = 0xffffffff
+		super_rgboffset = 0
+	}
+		
+	
+
+	Renderer.drawSpriteTinted(key, px, py, 0, SPRITE_FLAG_PRIO, renderQueue, 0, tintColor, 0x10000)
+}
+
+
+function u32 ShenkSam_getHSVColor(u64 v1, u64 v2, u64 v3)
+{
+    float H = v1
+    float S = v2
+    float V = v3
+    
+    float temp_s = S / 100
+    float temp_v = V / 100
+     float temp_C = temp_s * temp_v
+     float temp_X = temp_C * (1 - abs((H/60 % 2) - 1))
+    float temp_m = temp_v - temp_C
+    
+    float temp_r = 0
+    float temp_g = 0
+    float temp_b = 0
+    
+    if (H >= 0 && H < 60)
+    {
+        temp_r = temp_C
+        temp_g = temp_X
+        temp_b = 0
+    }
+    else if (H >= 60 && H < 120)
+    {
+        temp_r = temp_X
+        temp_g = temp_C
+        temp_b = 0
+    }
+    else if (H >= 120 && H < 180)
+    {
+        temp_r = 0
+        temp_g = temp_C
+        temp_b = temp_X
+    }
+    else if (H >= 180 && H < 240)
+    {
+        temp_r = 0
+        temp_g = temp_X
+        temp_b = temp_C
+    }
+    else if (H >= 240 && H < 300)
+    {
+        temp_r = temp_X
+        temp_g = 0
+        temp_b = temp_C
+    }
+    else
+    {
+        temp_r = temp_C
+        temp_g = 0
+        temp_b = temp_X
+    }
+    
+    //debugLog(stringformat("H:%d S:%d V:%d", H, S, V))
+    //debugLog(stringformat("R:%d G:%d B:%d", temp_r, temp_g, temp_b))
+    
+    float Red   = (temp_r+temp_m) * 255
+    float Green = (temp_g+temp_m) * 255
+    float Blue  = (temp_b+temp_m) * 255
+    
+    return u32(Math.roundToInt(Red) << 16) + u32(Math.roundToInt(Green) << 8) + Math.roundToInt(Blue)
+	
+	
+}
+
+//function string getCharacterPaletteKey(u8 character)
+//{
+//	if (character == CHARACTER_SONIC && u8[0xffffe654] == 0)
+//	{
+//		if (restyled.Palette == 0x00)
+//			return "00"
+//		if (restyled.Palette == 0x01)
+//			return "01"
+

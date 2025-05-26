@@ -1,5 +1,0 @@
-{
-
-	"bg_dataselect2":  { "File": "dataselect_bg.png", "Rect": "0,0,0,0", "Center": "0,0" },
-	"bg_dataselect": { "File": "dataselect_bag.png" }
-}

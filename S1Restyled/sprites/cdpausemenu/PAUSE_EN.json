@@ -1,0 +1,9 @@
+{
+	"cd_minisonic_0":  { "File": "PAUSE_EN.bmp", "Rect": "1,104,16,23", "Center": "0,0" },
+	"cd_minisonic_1":  { "File": "PAUSE_EN.bmp", "Rect": "18,104,16,23", "Center": "-1,0" },
+	"cd_minisonic_2":  { "File": "PAUSE_EN.bmp", "Rect": "35,104,16,23", "Center": "-1,0" },
+	"s3_minisonic_0":  { "File": "PAUSE_EN.bmp", "Rect": "129,65,18,23", "Center": "1,0" },
+	"s3_minisonic_1":  { "File": "PAUSE_EN.bmp", "Rect": "148,65,17,23", "Center": "2,0" },
+	"s3_minisonic_2":  { "File": "PAUSE_EN.bmp", "Rect": "166,65,17,23", "Center": "2,0" },
+	"s3_minisonic_3":  { "File": "PAUSE_EN.bmp", "Rect": "184,65,17,23", "Center": "2,0" }
+}

@@ -1,0 +1,32 @@
+{
+	"Metadata":
+	{
+		"Name": "Restyled UI",
+		"Author": "rosie_eclairs",		
+		"Description": "A restyled user interface.",
+	},
+
+	"OtherMods":
+	{
+		"3y3an":
+		{
+			"DisplayName": "Eyean",
+			"IsRequired": "0",
+			"Priority": "Higher",
+		},	
+		"AmyGalorePlus":
+		{
+			"DisplayName": "Amy Galore",
+			"IsRequired": "0",
+			"Priority": "Lower",
+		},
+		"AmyGaloreMisc":
+		{
+			"DisplayName": "Amy Galore",
+			"IsRequired": "0",
+			"Priority": "Lower",
+		},				
+	
+	},	
+
+}		
