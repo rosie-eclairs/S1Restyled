@@ -1,7 +1,0 @@
-{
-	"character_sonic_standup_0x00":  { "File": "character_sonic_standup.bmp", "Rect": "8,8,64,64", "Center": "43,29" },
-	"character_sonic_standup_0x01":  { "File": "character_sonic_standup.bmp", "Rect": "88,8,64,64", "Center": "43,29" },
-	"character_sonic_standup_0x02":  { "File": "character_sonic_standup.bmp", "Rect": "168,8,64,64", "Center": "45,29" },
-	"character_sonic_standup_0x03":  { "File": "character_sonic_standup.bmp", "Rect": "248,8,64,64", "Center": "45,29" },
-	"character_sonic_standup_0x04":  { "File": "character_sonic_standup.bmp", "Rect": "328,8,64,64", "Center": "48,29" }
-}
